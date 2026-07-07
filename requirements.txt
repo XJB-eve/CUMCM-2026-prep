@@ -1,0 +1,32 @@
+# 数模国赛 Python 统一环境
+# 用法：py -m pip install -r requirements.txt
+# Python 版本：3.14.x（本机已装 3.14.3）；建议全队统一 3.11+ 均可
+# 下面版本号为本机已验证可用的版本，三人保持一致以保证结果可复现
+
+# —— 核心科学计算 ——
+numpy==2.4.3
+pandas==3.0.2
+scipy==1.17.1
+sympy==1.14.0
+
+# —— 可视化 ——
+matplotlib==3.10.8
+seaborn==0.13.2
+
+# —— 机器学习 / 统计 ——
+scikit-learn==1.8.0
+statsmodels==0.14.6
+
+# —— 优化 / 图论 / 运筹 ——
+pulp==3.3.2          # 线性/整数规划（B/C题）
+networkx==3.6.1      # 图论、最短路、网络流
+
+# —— 数据 IO / 工具 ——
+openpyxl==3.1.5      # 读写 Excel
+tqdm==4.67.3         # 进度条
+
+# —— 可选（按需手动装，Python 3.14 可能暂无 wheel）——
+# scikit-opt         # 遗传算法/模拟退火/粒子群（GA/SA/PSO）现成实现
+# xgboost            # 梯度提升树（C题分类/回归常用）
+# pmdarima           # auto_arima 时间序列
+# jupyterlab         # 交互式笔记本

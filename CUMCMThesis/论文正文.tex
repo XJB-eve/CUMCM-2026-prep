@@ -1,0 +1,144 @@
+%==============================================================
+%  全国大学生数学建模竞赛 论文骨架（CUMCMThesis 模板）
+%  用法：xelatex 编译（不要用 pdflatex）
+%    命令行： latexmk -xelatex 论文正文
+%    或 TeXstudio 里把默认编译器设为 XeLaTeX 后按绿色箭头
+%  提交电子版时，把下面第1行换成第2行（去掉封面和编号页）
+%==============================================================
+\documentclass{cumcmthesis}
+% \documentclass[withoutpreface,bwprint]{cumcmthesis} % 电子版提交用
+
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{url}
+\usepackage{subcaption}
+
+%==================== 队伍信息（务必填对，否则白忙）====================
+\title{此处填论文题目}
+\tihao{B}                 % 题号 A/B/C
+\baominghao{报名号}        % 报名号
+\schoolname{湖南大学}
+\membera{队员一姓名}
+\memberb{队员二姓名}
+\memberc{队员三姓名}
+\supervisor{指导老师}
+\yearinput{2026}
+\monthinput{9}
+\dayinput{X}
+
+\begin{document}
+
+\maketitle
+
+%==================== 摘要（评委只花90秒看，最重要！）====================
+\begin{abstract}
+针对……问题，本文……（第一段：问题重述，用建模语言，约占20\%）。
+
+针对问题一，本文建立了……模型，采用……算法求解……；针对问题二，……
+（第二段：模型方法，总-分结构，约占50\%）。
+
+结果表明……（第三段：\textbf{必须有具体数据！}如"误差小于2\%""准确率达98.2\%"，约占30\%）。
+本文的创新点在于……（第四段：创新特色，可选）。
+
+\keywords{关键词1\quad 关键词2\quad 关键词3\quad 关键词4}
+\end{abstract}
+
+% 国赛不要目录，保持注释
+% \tableofcontents
+
+%==================== 正文 ====================
+\section{问题重述}
+\subsection{问题背景}
+（用自己的话复述背景，不要照抄原题）
+
+\subsection{问题提出}
+本文需要解决以下问题：
+\begin{itemize}
+    \item 问题一：……
+    \item 问题二：……
+    \item 问题三：……
+\end{itemize}
+
+\section{问题分析}
+（建议配一张总体思路流程图，展示对问题的理解深度）
+
+\section{模型假设}
+\begin{enumerate}
+    \item 假设……。\textbf{理由：}……（每条假设都要说明为什么可以这样简化）
+    \item 假设……。\textbf{理由：}……
+\end{enumerate}
+
+\section{符号说明}
+\begin{center}
+    \begin{tabular}{cc}
+        \toprule[1.5pt]
+        \makebox[0.3\textwidth][c]{符号} & \makebox[0.5\textwidth][c]{意义} \\
+        \midrule[1pt]
+        $x_i$ & 第 $i$ 个决策变量 \\
+        $\alpha$ & 观测角度（rad） \\
+        \bottomrule[1.5pt]
+    \end{tabular}
+\end{center}
+
+\section{模型的建立与求解}
+\subsection{问题一模型}
+\subsubsection{模型建立}
+根据……，建立目标函数：
+\begin{equation}
+    \min \; f(x)=\sum_{i=1}^{n}(y_i-\hat{y}_i)^2
+    \label{eq:obj}
+\end{equation}
+约束条件为
+\begin{equation}
+    \begin{cases}
+        g_1(x)\le 0,\\
+        g_2(x)=0.
+    \end{cases}
+\end{equation}
+
+\subsubsection{模型求解}
+（说明用什么算法求解，配结果图/表）
+\begin{figure}[!htbp]
+    \centering
+    % \includegraphics[width=.6\textwidth]{result1}  % 图名用英文，放 figures/ 下
+    \caption{问题一求解结果}
+    \label{fig:result1}
+\end{figure}
+
+\subsection{问题二模型}
+（同上结构）
+
+\section{模型的检验与灵敏度分析}
+（国奖标配！至少扰动1-2个关键参数，看输出变化）
+\begin{table}[!htbp]
+    \caption{灵敏度分析结果}\label{tab:sens}\centering
+    \begin{tabular}{ccc}
+        \toprule[1.5pt]
+        参数扰动 & 输出变化 & 相对误差 \\
+        \midrule[1pt]
+        $+5\%$ & …… & …… \\
+        $-5\%$ & …… & …… \\
+        \bottomrule[1.5pt]
+    \end{tabular}
+\end{table}
+
+\section{模型的评价与推广}
+\subsection{模型优点}
+\subsection{模型缺点}
+\subsection{模型推广}
+
+%==================== 参考文献 ====================
+\begin{thebibliography}{9}
+    \bibitem{ref1} 作者. 文献标题[J]. 期刊, 年份.
+\end{thebibliography}
+
+%==================== 附录（必须放完整可运行源代码）====================
+\newpage
+\begin{appendices}
+\section{Python 源程序}
+\begin{lstlisting}[language=python]
+import numpy as np
+# 在此粘贴完整可运行代码
+\end{lstlisting}
+\end{appendices}
+
+\end{document}
