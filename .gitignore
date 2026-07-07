@@ -1,0 +1,45 @@
+# === 论文 PDF / 大文件（下载的论文不入库，避免仓库臃肿+版权问题）===
+*.pdf
+*.zip
+*.rar
+*.7z
+论文PDF/
+papers/
+
+# === LaTeX 编译产物 ===
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.nav
+*.snm
+*.vrb
+*.xdv
+
+# === Python ===
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# === 数据 / 输出（视需要放开）===
+# data/
+output/*.tmp
+
+# === 操作系统 / 编辑器 ===
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*~
+*.swp
