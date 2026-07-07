@@ -15,6 +15,9 @@
 | `队员1_学习心得模板_建模员.md` | 建模员心得（2022-B无人机定位 / 2024-A板凳龙） |
 | `队员2_学习心得模板_编程员.md` | 编程员心得（2020-B穿越沙漠 / 2018-B RGV调度） |
 | `队员3_学习心得模板_写作员.md` | 写作员心得（2024-A板凳龙评阅 / 2022-C玻璃成分） |
+| `LaTeX使用指南.md` | LaTeX 上手指南（Overleaf/本地两条路+语法+避坑） |
+| `requirements.txt` | Python 统一环境依赖（`py -m pip install -r requirements.txt`） |
+| `CUMCMThesis/` | 官方 LaTeX 模板 + `论文正文.tex` 中文论文骨架（本地已跑通） |
 
 ## 🚀 快速开始
 
