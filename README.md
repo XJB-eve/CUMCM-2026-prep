@@ -12,16 +12,19 @@
 | `数模国赛_第一阶段备赛方案.md` | 总方案：选题策略、近十年赛题解析、资源渠道、九大模型体系 |
 | `第一阶段_选题决策与任务分配.md` | 选题决策、9篇论文分配、检查清单与时间节点 |
 | `论文索引与国奖攻略.md` | 论文下载总索引（含真实性标注）+ 国奖冲刺方法论 |
+| `国赛论文获取指南.md` | **可靠下载指南 + 避坑**：官方站取法、zhanwen"国赛"夹实为研赛的警示 |
 | `队员1_学习心得模板_建模员.md` | 建模员心得（2022-B无人机定位 / 2024-A板凳龙） |
 | `队员2_学习心得模板_编程员.md` | 编程员心得（2020-B穿越沙漠 / 2018-B RGV调度） |
 | `队员3_学习心得模板_写作员.md` | 写作员心得（2024-A板凳龙评阅 / 2022-C玻璃成分） |
+| `研赛范文参考.md` | 研赛(华为杯)范文方法论参考（可迁移借鉴，非国赛论文替代） |
+| `工作总结与行动指南.md` | 已交付成果清单 + 分角色下一步行动指导 |
 | `LaTeX使用指南.md` | LaTeX 上手指南（Overleaf/本地两条路+语法+避坑） |
 | `requirements.txt` | Python 统一环境依赖（`py -m pip install -r requirements.txt`） |
 | `CUMCMThesis/` | 官方 LaTeX 模板 + `论文正文.tex` 中文论文骨架（本地已跑通） |
 
 ## 🚀 快速开始
 
-1. 按 `论文索引与国奖攻略.md` 下载各自论文 PDF（首选 GitHub `zhanwen/MathModel`）
+1. 按 `论文索引与国奖攻略.md` 下载各自论文 PDF（**首选官方站 `dxs.moe.gov.cn` / 知网**；勿用 zhanwen 下国赛论文，详见 `国赛论文获取指南.md`）
 2. 下载后**核对作者名**（冯跃洋 2022-B、黄慧婷 2022-C 待核实）
 3. 写作员 7/7 前跑通 LaTeX 模板（CUMCMThesis，XeLaTeX 编译）
 4. 编程员 7/7 前统一 Python 环境
@@ -34,6 +37,6 @@
 
 ## 🔗 关键资源
 
-- 论文合集：https://github.com/zhanwen/MathModel
+- 官方论文展示（**下国赛论文首选**）：https://dxs.moe.gov.cn/zx/hd/sxjm/sxjmlw/
+- 算法代码/LaTeX模板参考：https://github.com/zhanwen/MathModel　（⚠️ 其"国赛论文"夹实为研赛误命名，勿用于下国赛论文）
 - LaTeX模板：https://github.com/latexstudio/CUMCMThesis
-- 官方论文展示：https://dxs.moe.gov.cn/zx/hd/sxjm/sxjmlw/

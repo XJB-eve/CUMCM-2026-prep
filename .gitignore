@@ -35,6 +35,9 @@ env/
 # data/
 output/*.tmp
 
+# === 页面渲染 scratch（PDF转PNG等，可再生，不入库）===
+_pgtmp*
+
 # === 操作系统 / 编辑器 ===
 .DS_Store
 Thumbs.db
